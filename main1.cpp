@@ -1,8 +1,14 @@
-#include <QCoreApplication>
-
-int main(int argc, char *argv[])
+#ifdef MAIN1
+#include <iostream>
+using namespace std;
+int main()
 {
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
+    int *p = new int[2];
+    p[0] = 0;
+    p[1] = 1;
+    p++;
+    cout << *p << endl;
+    delete --p;
+    return 0;
 }
+#endif
