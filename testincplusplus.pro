@@ -16,4 +16,5 @@ TEMPLATE = app
 
 
 SOURCES += \
-    main1.cpp
+    main1.cpp \
+    main2.cpp
